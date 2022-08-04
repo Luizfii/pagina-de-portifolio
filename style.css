@@ -196,13 +196,10 @@ a:hover{
 }
 
 .card{
+    overflow: hidden;
     height: 300px;
     width: 400px;
-    margin: 3rem 0 0 ;
-    background-image: url('./img/bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,6 +209,13 @@ a:hover{
     transition: 0.3s;
 }
 
+iframe{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 3rem 0 0;
+}
+
 .card-text{
     width: 40%;
     font-family: sans-serif;
@@ -219,41 +223,9 @@ a:hover{
     color: rgb(109,109,109);
 }
 
-.card-wrapper {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.card-wrapper::before{
-    content: '';
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    display: block;
-    border: 1px solid white;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.card-wrapper h2{
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: 0;
-    transition: 0.3s;
-}
-
-.card-wrapper p{
-    font-size: 0;
-    text-transform: uppercase;
-    visibility: hidden;
-    transition: 0.3s;
-    font-weight: bold;
-    opacity: 0;
+.card-text h2{
+ padding-bottom: 20px;
+ text-align: center;
 }
 
 .card:hover{
